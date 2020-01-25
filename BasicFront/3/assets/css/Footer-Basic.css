@@ -1,0 +1,230 @@
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+#userContainer {
+  margin-top: none;
+}
+
+#user {
+  /*overflow-y: auto;*/
+  /*height: 650px;*/
+  /*min-height: 450px;*/
+}
+
+#user-img-profile {
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  margin-left: 10%;
+  border: solid;
+}
+
+#user-row-left {
+  position: relative;
+}
+
+#navbar-main {
+  background-color: #dedada;
+  margin-top: 0px;
+}
+
+#card-group-user-profile-right-col {
+  width: 100%;
+}
+
+#user-profile-name {
+  margin-top: 10px;
+}
+
+#user-profile-rating {
+  color: #ffc107!important;
+}
+
+#user-profile-not-rating {
+  color: #dedada;
+}
+
+#paragraph-user-rating-number {
+  float: right;
+}
+
+#bottom-socila-icons-user-profile {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+#social-icon-user-profile-bottom {
+  font-size: 20px;
+}
+
+#socila-icons-user-profile-bottom-icon-1 {
+  font-size: 30px;
+  /*margin-right: 30px;*/
+  margin-right: 15px;
+}
+
+#social-icons-user-profile-bottom-row {
+  border-radius: 5px;
+  /*background-color: grey;*/
+  /*width: 70%;*/
+  /*border: solid;*/
+  align: center;
+}
+
+#user-profile-side-location-icon {
+  /*color: marron;*/
+}
+
+#user-profile-alma-mater {
+  font-weight: bold;
+}
+
+#user-profile-users-key-analytics {
+  margin-top: 10px;
+}
+
+#user-profile-more-info-container {
+  /*border: solid;*/
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#user-profile-more-info-div-container-sub {
+  margin-bottom: 20px;
+}
+
+#skill-icon {
+  width: 20%;
+}
+
+#skill-icon-col {
+}
+
+#skill-icon-col {
+}
+
+#skill-progress-col {
+}
+
+#skill-icon-col {
+}
+
+#skiils-icon-col {
+  width: 10%;
+}
+
+#skiils-progress-col {
+  width: 90%;
+}
+
+#skiils-icons-icon {
+  font-style: 30px;
+  font-size: 30px;
+}
+
+#tools-col {
+  width: 50%;
+}
+
+#tools-icons-icon {
+  font-size: 60px;
+}
+
+#profile-tab-aboutme-who-am-i-icon {
+  color: #31A83F;
+}
+
+#who-am-i-col {
+  height: 75px;
+}
+
+#user-profile-about-me-div {
+}
+
+#user-profile-about-me-div {
+  border-radius: 5px;
+}
+
+#profile-tab-aboutme-my-specialities-icon {
+  color: #23C1CA;
+}
+
+#user-profile-about-me-my-specialities-icon {
+  width: 10%;
+}
+
+#user-profile-about-me-my-specialities-icon-icon {
+  font-size: 30px;
+  color: #23C1CA;
+}
+
+#profile-tab-aboutme-my-experience-icon {
+  color: #F661D4;
+}
+
+#user-profile-about-me-my-experience-row1 {
+  width: 50%;
+}
+
+#user-profile-about-me-experience-courses {
+  width: 100%;
+}
+

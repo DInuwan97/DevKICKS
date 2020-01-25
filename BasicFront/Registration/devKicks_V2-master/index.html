@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no,user-scalable=0" />
+
+    <title>nodes.js - js connected nodes animation</title>
+    <meta name="description" content="nodes.js is a nodes/particles animation useable for backgrounds">
+    <meta name="keywords" content="nodes, animation, particlees, web, html5, canvas, backgorund">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BootZard - Bootstrap Wizard Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+
+
+
+
+
+    <!-- Fonts and icons -->
+    <script src="js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Lato:300,400,700,900"]},
+            custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../assets/css/fonts.min.css']},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!-- CSS Files -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body style="height:500%;overflow: hidden;">
+    <!-- <nodes.js embedding> -->
+    <script type="text/javascript" src="js/nodes.js"></script>
+    <script type="text/javascript">
+        var nodesjs = new NodesJs({
+            id: 'nodes',
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particleSize: 2,
+            lineSize: 1,
+            particleColor: [255, 255, 255, 0.3],
+            lineColor: [255, 255, 255],
+            backgroundFrom: [10, 25, 100],
+            backgroundTo: [25, 50, 150],
+            backgroundDuration: 4000,
+            nobg: false,
+            number: window.hasOwnProperty('orientation') ? 30 : 100,
+            speed: 20
+        });
+    </script>
+
+
+
+    <div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; position: fixed;">
+        <canvas id="nodes" style="height: 100%;width:100%;"></canvas>
+    </div>
+
+
+
+    <div class="top-content" style="overflow: hidden;position:fixed;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text">
+                    <h1>Dev <strong>KICKS</strong> Registration</h1>
+                    <div class="description">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+                    <form role="form" action="" method="post" class="f1">
+
+                        <h3>Register To Our App</h3>
+                        <p>Fill in the form to get instant access</p>
+                        <div class="f1-steps">
+                            <div class="f1-progress">
+                                <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3"
+                                    style="width: 16.66%;"></div>
+                            </div>
+                            <div class="f1-step active">
+                                <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                                <p>about</p>
+                            </div>
+                            <div class="f1-step">
+                                <div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                                <p>account</p>
+                            </div>
+                            <div class="f1-step">
+                                <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
+                                <p>social</p>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <h4>Tell us who you are:</h4>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="sr-only" for="f1-first-name">First name</label>
+                                        <input type="text" name="f1-first-name" placeholder="First name..."
+                                            class="f1-first-name form-control" id="f1-first-name">
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+
+                                        <label class="sr-only" for="f1-last-name">Last name</label>
+                                        <input type="text" name="f1-last-name" placeholder="Last name..."
+                                            class="f1-last-name form-control" id="f1-last-name">
+                                    </div>
+                                </div>
+                                <div class="form-row col-md-12">
+                                    <div class="form-group">
+
+                                        <select class="form-control" id="exampleFormControlSelect1" required=""
+                                            style="height:43px;">
+                                            <option value="">Select Registration Type</option>
+                                            <option value="Student">Student</option>
+                                            <option value="Teacher">Teacher</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Project Manager">Project Manager</option>
+                                        </select>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="form-row col-md-6">
+                                    <label class="sr-only" for="f1-phone-number">Phone Number</label>
+                                    <input type="text" name="f1-phone-number" placeholder="Phone Number"
+                                        class="f1-phone-number form-control" id="f1-phone-number">
+                                </div>
+
+
+
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-next">Next</button>
+                                </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <h4>Set up your account:</h4>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+
+                                        <select class="form-control" id="exampleFormControlSelect1" style="height: 42px;">
+                                            <option selected>Provice</option>
+                                            <option>Western Province</option>
+                                            <option>Central Province</option>
+                                            <option>Southern Province</option>
+                                            <option>Uva Province</option>
+                                            <option>Sabaragamuwa Province</option>
+                                            <option>North Western Province</option>
+                                            <option>Western Province</option>
+                                            <option>North Central Province</option>
+                                            <option>North Province</option>
+                                            <option>Eastern Province</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+
+                                        <select class="form-control" id="exampleFormControlSelect2" style="height: 42px;">
+                                            <option selected>Districts</option>
+                                            <option>Western Province</option>
+                                            <option>Central Province</option>
+                                            <option>Southern Province</option>
+                                            <option>Uva Province</option>
+                                            <option>Sabaragamuwa Province</option>
+                                            <option>North Western Province</option>
+                                            <option>Western Province</option>
+                                            <option>North Central Province</option>
+                                            <option>North Province</option>
+                                            <option>Eastern Province</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+
+                                   <select class="form-control" id="exampleFormControlSelect2" style="height: 42px;">
+                                            <option selected>School</option>
+                                            <option>Western Province</option>
+                                            <option>Central Province</option>
+                                            <option>Southern Province</option>
+                                            <option>Uva Province</option>
+                                            <option>Sabaragamuwa Province</option>
+                                            <option>North Western Province</option>
+                                            <option>Western Province</option>
+                                            <option>North Central Province</option>
+                                            <option>North Province</option>
+                                            <option>Eastern Province</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        <div class="form-group col-md-6" >
+                            <input type="date" name="birthday" class="form-control" placeholder="Birthday" style="height: 42px;">
+                        </div>
+
+
+
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <h4>Social media profiles:</h4>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label class="sr-only" for="f1-facebook">NIC</label>
+                                    <input type="text" name="f1-facebook" placeholder="NIC..."
+                                        class="f1-facebook form-control" id="f1-facebook">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label class="sr-only" for="f1-facebook">Email</label>
+                                    <input type="text" name="f1-facebook" placeholder="Email"
+                                        class="f1-facebook form-control" id="f1-facebook">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="sr-only" for="f1-first-name">Password</label>
+                                        <input type="password" name="f1-first-name" placeholder="Password"
+                                            class="f1-first-name form-control" id="f1-first-name">
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+
+                                        <label class="sr-only" for="f1-last-name">Confirm Password</label>
+                                        <input type="password" name="f1-last-name" placeholder="Confirm Password"
+                                            class="f1-last-name form-control" id="f1-last-name">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Previous and Submit Buttons -->
+                            <div class="f1-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   
+
+
+
+
+
+
+
+    <!-- </nodes.js embedding> -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+   
+</body>
+
+</html>
