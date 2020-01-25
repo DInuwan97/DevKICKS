@@ -1,0 +1,70 @@
+body {
+  background-color: #dedada;
+}
+
+.nav{
+	background-color: #dedada;
+	opacity: 0.80;
+	margin-top: none;
+}
+
+.nav .container-fluid .navbar-brand{
+	background-image: url(&quot;assets/img/logo.svg&quot;);
+	background-repeat: no-repeat;width: 150px;
+	height: 40px;
+	background-position: center;
+	background-size: 80%;
+}
+
+.nav .navbar-nav .nav-item .nav-link .active .far .fa-user-circle{
+	font-size: 25px;
+	margin-left: 9px;
+}
+
+#userContainer{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#user-row-left{
+	margin-right: 0px;margin-left: 0px;
+}
+#user{
+	background-color: #f3f4f7;margin-right: 20px;margin-left: 0px;
+}
+#user-img-profile{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: contrast(85%);
+}
+
+#btneditprofile{
+	width: 70%;background-color: #01abea;
+}
+
+
+#firstSection {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../../assets/img/hero-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #firstSection {
+    background-image: url("../../assets/img/programmingImage.jpg");
+  }
+}
+
+.navbar-light .navbar-brand {
+}
+
+#viewAllIcon {
+  color: #fvfvfd;
+}
+

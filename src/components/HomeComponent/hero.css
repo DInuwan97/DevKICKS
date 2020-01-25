@@ -1,0 +1,10 @@
+body {
+    background-color: #dedada;
+    
+  }
+
+  @media (min-width: 992px) {
+    #firstSection {
+        background-image: url("./assets/img/programmingImage.jpg");
+    }
+  }  
