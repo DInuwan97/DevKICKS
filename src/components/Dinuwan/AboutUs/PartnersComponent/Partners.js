@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './assets/css/styles.css';
+import './assets/css/Lightbox-Gallery.css';
+
 
 export class Partners extends Component {
   render() {

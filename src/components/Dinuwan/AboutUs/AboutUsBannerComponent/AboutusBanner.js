@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './assets/css/Header-Blue.css';
+import './assets/css/styles.css';
 
 
 export class AboutUsBanner extends Component {

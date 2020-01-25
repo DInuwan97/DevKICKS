@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Link,withRouter} from 'react-router-dom';
 
+import './assets/css/Advanced-NavBar---Multi-dropdown.css';
+
+
 export class NavBar extends Component {
   render() {
     return (

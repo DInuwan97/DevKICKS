@@ -6,6 +6,7 @@ import AboutUsBanner from './components/Dinuwan/AboutUs/AboutUsBannerComponent/A
 import VisionMission from './components/Dinuwan/AboutUs/VisionMisionComponent/VisionMission';
 import Partners from './components/Dinuwan/AboutUs/PartnersComponent/Partners';
 import Testimonials from './components/Dinuwan/AboutUs/Testimonials/Testimonials';
+import Footer from './components/Dinuwan/Footer/Footer';
 
 
 export class App extends Component {
@@ -18,7 +19,7 @@ export class App extends Component {
           <VisionMission/>
           <Partners/>
           <Testimonials/>
-        
+        <Footer/>>
 
         </div>
       </Router>

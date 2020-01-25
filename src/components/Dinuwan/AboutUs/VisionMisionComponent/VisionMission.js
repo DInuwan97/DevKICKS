@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './assets/css/styles.css';
+
 export class VisionMission extends Component {
   render() {
     return (
