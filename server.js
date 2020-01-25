@@ -1,43 +1,42 @@
-const express = require('express');
-const bodyParser  =require('body-parser');
-const cors = require('cors');
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
-const usersRoute = require('./Routes/Users');
-const mongoose = require('mongoose');
+const usersRoute = require("./Routes/api/Users");
+const schoolsRoute = require("./Routes/api/Schools");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 6000;
 
 const app = express();
-app.use(express.json());
+
 app.use(bodyParser.json());
 
-
 app.use(
-    bodyParser.urlencoded({
-        extended:false
-    })
-)
+  bodyParser.urlencoded({
+    extended: false
+  })
+);
+app.use(express.json());
+app.use("/api/users", usersRoute);
+app.use("/api/schools", schoolsRoute);
 
-app.use('/users',usersRoute);
-
-
-///////////////////////////Usage of CORS///////////////////////////
+///////////////////////////Usage of CORS/////////////////////////
 app.use(cors());
 var corsOption = {
-    origin: '*',
-    optionSuccessStatus:200
-}
+  origin: "*",
+  optionSuccessStatus: 200
+};
 app.use(cors(corsOption));
 ///////////////////////////Usage of CORS///////////////////////////
 
-
 //////////////////////////MongoDB Configuration///////////////////
 
-const mongoURI = 'mongodb://localhost:27017/DEVKicks'; 
+const mongoURI = "mongodb://localhost:27017/DEVKicks";
 mongoose
-        .connect(mongoURI,{useNewUrlParser:true ,useUnifiedTopology:true})
-        .then(()=>console.log('MongoDB was connected to DEVKicks'))
-        .catch(err=> console.log(err));
+  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log("MongoDB was connected to DEVKicks"))
+  .catch(err => console.log(err));
 
-app.listen(PORT,()=>{
-    console.log("Server is listening on PORT " +PORT);
-})
+app.listen(PORT, () => {
+  console.log("Server is listening on PORT " + PORT);
+});

@@ -6,7 +6,7 @@ const schoolSchema = new mongoose.Schema({
     province : String,
     district : String    
 });
-
-const School = mongoose.model('School','schoolSchema')
+const School = mongoose.model("School", schoolSchema);
+  
 
 exports.School = School;
